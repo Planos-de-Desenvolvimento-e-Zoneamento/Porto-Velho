@@ -116,7 +116,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-8.750976199903887,-63.924359019547786],[-8.742705967169728,-63.91015751011526]]);
+        }).fitBounds([[-8.754321795246224,-63.92804016132564],[-8.737781329777906,-63.89963714246059]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -1902,12 +1902,8 @@
                         <td class="visible-with-data" id="Volume">' + (feature.properties['Volume'] !== null ? autolinker.link(feature.properties['Volume'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">�rea</th>\
+                        <th scope="row">Área (m²)</th>\
                         <td class="visible-with-data" id="�rea">' + (feature.properties['�rea'] !== null ? autolinker.link(feature.properties['�rea'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">dsada</th>\
-                        <td class="visible-with-data" id="dsada">' + (feature.properties['dsada'] !== null ? autolinker.link(feature.properties['dsada'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -1979,10 +1975,6 @@
                         <th scope="row">Área (m²) </th>\
                         <td class="visible-with-data" id="�rea">' + (feature.properties['�rea'] !== null ? autolinker.link(feature.properties['�rea'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">dsada</th>\
-                        <td class="visible-with-data" id="dsada">' + (feature.properties['dsada'] !== null ? autolinker.link(feature.properties['dsada'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -2053,10 +2045,6 @@
                         <th scope="row">Área (m²) </th>\
                         <td class="visible-with-data" id="�rea">' + (feature.properties['�rea'] !== null ? autolinker.link(feature.properties['�rea'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">dsada</th>\
-                        <td class="visible-with-data" id="dsada">' + (feature.properties['dsada'] !== null ? autolinker.link(feature.properties['dsada'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -2126,10 +2114,6 @@
                     <tr>\
                         <th scope="row">Área (m²) </th>\
                         <td class="visible-with-data" id="�rea">' + (feature.properties['�rea'] !== null ? autolinker.link(feature.properties['�rea'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">dsada</th>\
-                        <td class="visible-with-data" id="dsada">' + (feature.properties['dsada'] !== null ? autolinker.link(feature.properties['dsada'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
